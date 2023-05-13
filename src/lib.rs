@@ -1,14 +1,13 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+/// A library for translating mathematical concepts into computable structures.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+/// A module for sets
+mod set;
+pub use set::Set;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+/// A module for defining topologies on sets
+mod topology;
+pub use topology::Topology;
+
+/// A module defining maps between sets
+mod map;
+pub use map::Map;
