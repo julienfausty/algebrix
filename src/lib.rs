@@ -11,3 +11,8 @@ pub use topology::Topology;
 /// A module defining maps between sets
 mod map;
 pub use map::Map;
+
+/// A module including structs for working with the set of real numbers
+mod reals;
+pub use reals::Reals;
+pub use reals::Interval;
